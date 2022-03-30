@@ -1,0 +1,281 @@
+*{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+}
+body{
+	font-family: 'Quicksand', sans-serif;
+}
+.nav{
+	width: 100%;
+	height: 60px;
+	box-shadow: 0px 0px 8px #111212;
+	position: fixed;
+}
+.nave{
+	width: 100%;
+	height: 60px;
+	box-shadow: 0px 0px 8px #111212;
+	background:linear-gradient(45deg,#004881,#0090cf);
+	position: fixed;
+	transition: 1s;
+}
+.nav_containner{
+	width: 90%;
+	height: 60px;
+	margin:auto;
+}
+.logo{
+	width: auto;
+	height: 60px;
+	float: left;
+}
+.logo_size{
+	height: 60px;
+	width: auto;
+}
+.eyes_logo{
+	width: 70%;
+	height: auto;
+
+}
+ul{
+	width: auto;
+	height: 60px;
+	float: right;
+}
+a{
+	list-style-type: none;
+	text-decoration: none;
+}
+ul a li{
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	padding: 0px 10px 0px 10px;
+	color: white;
+}
+.banner_sub_containner{
+	width: 90%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+}
+.banner_sub_containner_left{
+	width: 50%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #ffffff;
+	text-align: justify;
+}
+.banner_sub_containner_right{
+	width: 50%;
+	height: auto;
+	text-align: right;
+}
+.welcome{
+	font-size: 45px;
+	font-weight: bolder;
+	font-family: 'Manrope', sans-serif;
+}
+.name{
+	font-size: 30px;
+
+}
+.banner_contact_button{
+	width: 150px;
+	color: #ffffff;
+	padding: 10px;
+	border:3px #ffffff double;
+	text-align: center;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+.banner_contact_button:hover{
+	background-color: #ffffff;
+	color: #004881;
+}
+
+/* our services style*/
+
+
+
+.our_services_container{
+	width: 90%;
+	height: auto;
+	margin:auto;
+	padding-top: 100px;
+}
+.part_title{
+	font-size: 30px;
+	font-weight: bolder;
+	font-family: 'Manrope', sans-serif;
+	color: #004881;
+}
+
+.box{
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+	grid-gap: 40px;
+	margin-top: 15px;
+}
+
+.box_containner{
+	text-align: center;
+}
+.icon_containner{
+	height: 100px;
+	width: 100px;
+	border: solid 2px #0090cf;
+	color: #0090cf;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:auto;
+	overflow: hidden;
+}
+.services_icon{
+	width: 60px;
+	height: 60px;
+}
+.box_service_title{
+	font-weight: bold;
+	font-size: 18px;
+	color: #424343;
+}
+.box_service_texte{
+	width: 100%;
+	height: auto;
+	color:#424343;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 15px; 
+}
+
+/* our realisation*/
+
+.box_realisation{
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+	grid-gap: 20px;
+	margin-top: 15px;
+}
+.realisation_image{
+	width: 100%;
+	height: auto;
+}
+
+.video_box{
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+	grid-gap: 20px;
+	margin-top: 15px;
+}
+video{
+	width: 100%;
+	height: auto;
+}
+
+.realisation_cadre{
+	box-shadow: 0px 5px 8px #b2b2b2;
+}
+
+
+
+.our_cotomer{
+	width: 100%;
+	min-height: 100vh;
+}
+
+.our_costomer_container{
+	width: 90%;
+	height: auto;
+	margin:auto;
+	padding-top: 100px;
+}
+/* footer*/
+
+.footer{
+	width: 100%;
+	height: auto;
+	background-color: #3d3e3e;
+	text-align: center;
+	color: #ffffff;
+	padding-bottom: 10px;
+}
+
+.footer-link{
+	text-decoration: none;
+	color: white;
+}
+
+.footer-icon{
+	margin:5px;
+}
+#toggle_icon{
+	position: absolute;
+	right: 10px;
+	color: #ffffff;
+	font-size: 50px;
+	cursor: pointer;
+	display: none;
+}
+@media screen and (max-width: 992px){
+	#toggle_icon{
+		display: block;
+	}
+
+	ul{
+	width: 100%;
+	position: absolute;
+	height: auto;
+	top: 60px;
+	right:0px;
+	background:linear-gradient(45deg,#004881,#0090cf);
+	display: none;
+	}
+
+	ul a li{
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	line-height: 60px;
+	color: white;
+	border-bottom:solid 1px grey;
+	width: 100%;
+	}
+	.banner_sub_containner{
+		flex-direction: column;
+		width: 100%;
+	}
+	.banner_sub_containner_left{
+		text-align: center;
+		width: 80%;
+		margin:auto;
+	}
+	.banner_sub_containner_right{
+		text-align: center;
+		width: 70%;
+		margin:auto;
+	}
+	
+	.banner_contact_button{
+		margin:auto;
+		margin-top: 30px;
+	}
+	.part_title{
+		width: 100%;
+		text-align: center;
+	}
+
+
+}
